@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stiles.css">
+</head>
+<body>
+    <!--header -шапка сайта-->
+    <header>
+        <!--обернули в контейнер,так как блок ограниченной ширины-->
+        <div class="container">
+            <!--href содержит адрес ссылки-->
+            <a href="/">
+                <!--src содержит путь к картинке, alt содержит альтернативный текст-->
+                <img src="images/WD.png" alt="Logotype">
+            </a>
+
+            <!--ul-ненумерованный список-->
+            <ul>
+                <!--li-элемент списка-->
+                <li>
+                    <a href="/">ГЛАВНАЯ</a>
+                </li>
+                <li>
+                    <!--эта ссылка ссылается на элемент на этой же странице с id about-->
+                    <a href="#about">ОБ АВТОРЕ</a>
+                </li>
+                <li>
+                    <a href="#works">РАБОТЫ</a>
+                </li>
+                <li>
+                    <a href="#process">ПРОЦЕСС</a>
+                </li>
+                <li>
+                    <a href="#contacts">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="imageWrapper">
+               <img src="images/heroimg.png" alt="Дизайн и верстка"> 
+            </div>
+            <div class="textWrapper">
+                <h1>Дизайн и верстка</h1>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <button type="button">НАПИСАТЬ МНЕ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutMe" id="about">    
+        <div class="textWrapper">
+            <h2>Обо мне</h2>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <div class="textWrapper">
+                <h2>Мои навыки</h2>
+                <div class="skill">
+                    <h3>HTML5</h3>
+                    <div class="progressLine">
+                        <div class="progress html5"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS3</h3>
+                    <div class="progressLine">
+                        <div class="progress css3"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript ES6</h3>
+                    <div class="progressLine">
+                        <div class="progress javascript"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Git</h3>
+                    <div class="progressLine">
+                        <div class="progress git"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>ReactJS</h3>
+                    <div class="progressLine">
+                        <div class="progress reactjs"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Redux</h3>
+                    <div class="progressLine">
+                        <div class="progress redux"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Redux Saga</h3>
+                    <div class="progressLine">
+                        <div class="progress saga"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="imageWrapper">
+                <img src="images/authorphoto.jpg" alt="фото автора">
+            </div>
+        </div>
+    </div>
+
+    <div id="myWorks">
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+        <div class="workPreview">
+            <img src="https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg" alt="Preview 1">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="images/eye.png" alt="открыть этот проект">
+            </a>
+        </div>
+    </div>
+
+    <div id="feedback">
+        <div class="contentWrapper">
+            <h2>Хотите веб-сайт?</h2>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <form action="">
+                <input type="text" placeholder="Ваше имя">
+                <input type="email" placeholder="Ваш e-mail">
+                <textarea placeholder="Сообщение"></textarea>
+                <div>
+                    <button type="submit">
+                        ОТПРАВИТЬ
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="textWrapper">
+                <span>Иванов Иван</span>
+                <p>&copy; 2022. Все права защищены.</p>
+            </div>
+            <div class="iconWrapper">
+                <a href="https://www.facebook.com/profile.php?id=100003560149295" target="_blank">
+                    <img src="images/facebook-f-brands.svg" alt="Фейсбук">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

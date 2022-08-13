@@ -1,0 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header */
+header {
+    /*display: block inline-block flex grid*/
+    display: flex;
+    justify-content: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    background-color: #EEEFF1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 42px;
+}
+
+header ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+header ul li a {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding-top: 83px;
+    padding-bottom: 146px;
+    background-color: #EEEFF1;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+}
+
+.hero .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .textWrapper h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.hero .textWrapper p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 60px;
+}
+
+.hero .textWrapper button {
+    width: 225px;
+    height: 65px;
+    background-color: #34547A;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/* About me*/
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.aboutMe .textWrapper {
+    width: 540px;
+}
+
+.aboutMe .textWrapper h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.aboutMe .textWrapper p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+/*skills*/
+#skills {
+    display: flex;
+    justify-content: center;  
+    padding: 102px 0;
+    background-color: #FFFFFF;
+}
+
+#skills .container {
+    display: grid;
+    grid-template-columns: 445px 1fr;
+    align-items: center;
+    grid-gap: 150px;
+}
+
+#skills .textWrapper h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+#skills .textWrapper .skill {
+    margin-bottom: 30px;
+}
+
+#skills .textWrapper .skill:last-child {
+    margin-bottom: 0;
+}
+
+#skills .textWrapper h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+#skills .textWrapper .progressLine {
+    width: 100%;
+    height: 4px;
+    background: #C4C4C4;
+}
+
+#skills .textWrapper .progress {
+    height: 4px;
+    background: #34547A;
+}
+
+#skills .textWrapper .progress.html5 {
+    width: 50%;
+}
+
+#skills .textWrapper .progress.css3 {
+    width: 30%;
+}
+
+#skills .textWrapper .progress.javascript {
+    width: 0%;
+}
+
+#skills .textWrapper .progress.git {
+    width: 0%;
+}
+
+#skills .textWrapper .progress.reactjs {
+    width: 0%;
+}
+
+#skills .textWrapper .progress.redux {
+    width: 0%;
+}
+
+#skills .textWrapper .progress.saga {
+    width: 0%;
+}
+
+
+#skills .imageWrapper {
+    height: 450px;
+}
+
+#skills .imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*my works*/
+#myWorks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#myWorks .workPreview {
+    width: 25%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+#myWorks .workPreview > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#myWorks .workPreview a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 84, 122, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#myWorks .workPreview a:hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* feedback*/
+#feedback {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+#feedback .contentWrapper {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback .contentWrapper h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+#feedback .contentWrapper p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 65px;
+}
+
+#feedback .contentWrapper form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 30px;
+    grid-template-areas: "name email"
+                         "message message"
+                         "button button";
+}
+
+#feedback .contentWrapper form input,
+#feedback .contentWrapper form textarea {
+    border: none;
+    border-radius: 0;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+}
+
+#feedback .contentWrapper form input {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#feedback .contentWrapper form input[type="text"] {
+    grid-area: name;
+}
+
+#feedback .contentWrapper form input[type="email"] {
+    grid-area: email;
+}
+
+#feedback .contentWrapper form textarea {
+    grid-area: message;
+    height: 175px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    resize: none;
+}
+
+#feedback .contentWrapper form div {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#feedback .contentWrapper form div button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 190px;
+    height: 55px;
+    background-color: #34547A;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+/* Footer*/
+footer {
+    background-color: #34547A;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+}
+
+footer .container .textWrapper span {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+footer .container .textWrapper p {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+footer .container .iconWrapper {
+    display: flex; 
+    align-items: center;
+}
+
+footer .container .iconWrapper a {
+    margin-left: 20px;
+    height: 30px;
+}
+
+footer .container .iconWrapper a:nth-child(1) {
+    margin-left: 0;
+}
+
+footer .container .iconWrapper a img {
+    
+}
+
+
